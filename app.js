@@ -6,7 +6,6 @@ import 'dotenv/config';
 const app = express();
 
 app.use(express.static("public"));
-app.use(express.json());
 
 app.get('/', (req, res) => {
     res.sendFile("index.html", { root : "public" })
