@@ -1,16 +1,3 @@
-const headerTop = document.querySelector('.header-top');
-const scrollWatcher = document.createElement('div');
-
-scrollWatcher.setAttribute('data-scroll-watcher', '');
-headerTop.before(scrollWatcher);
-
-const navObserver = new IntersectionObserver(() => {
-  headerTop.classList.toggle('sticking')
-});
-
-navObserver.observe(scrollWatcher);
-
-
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 

@@ -1,17 +1,10 @@
 Paddle.Environment.set("sandbox"); // replace with "production" before going live
   Paddle.Setup({ 
-    token: '7d279f61a3499fed520f7cd8c08' // replace with your client-side token
+    token: 'test_cb109ef2e6a80f65476d44f227a' // replace with your client-side token
   });
 
-  $(function() {
-    var urlParams = new URLSearchParams(window.location.search);
-
+  function buyProduct(productId) {
     Paddle.Checkout.open({
-          transactionId: urlParams.get('_ptxn'),
-          settings: {
-            theme: "light",
-            locale: "en",
-            successUrl: urlParams.get('_px_success_url')
-        }
-    });
-  });
+        product: productId
+    })
+  }

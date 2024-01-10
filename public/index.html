@@ -1,989 +1,1047 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicone.png">
-    <title>Home | iPlayTV</title>
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" type="image/png" href="img/favicone.png">
+      <title>Home | iPlayTV</title>
+  </head>
+    <body>
 
-  <div id="overlay"></div>
-  <div id="mobile-menu" class="mobile-main-menu">
-    <nav>
-      <ul>
-          <li class="main-menu"><a href="channels.html">Channels</a></li>
-          <li class="main-menu"><a href="pricing.html">Plans & Pricing</a></li>
-          <li class="main-menu"><a href="faq.html">FAQ</a></li>
-          <li class="main-menu"><a href="about-us.html">About</a></li>
-          <li class="main-menu"><button class="login-btn">Log In</button></li>
-      </ul>
-    </nav>
-  </div>
-
-
-  <header class="header">
-    <div class="header-top">
-      <div class="container flex">
-              <img src="img/logo.png" alt="">
+        <div id="overlay"></div>
+        <div id="mobile-menu" class="mobile-main-menu">
           <nav>
-              <ul>
-                  <li class="mobile-only"><a href="channels.html">Channels</a></li>
-                  <li class="mobile-only"><a href="pricing.html">Plans & Pricing</a></li>
-                  <li class="mobile-only"><a href="faq.html">FAQ</a></li>
-                  <li class="mobile-only"><a href="about-us.html">About</a></li>
-              </ul>
+            <ul>
+                <li class="main-menu"><a href="channels.html">Channels</a></li>
+                <li class="main-menu"><a href="pricing.html">Plans & Pricing</a></li>
+                <li class="main-menu"><a href="faq.html">FAQ</a></li>
+                <li class="main-menu"><a href="about-us.html">About</a></li>
+                <li class="main-menu"><button class="login-btn">Log In</button></li>
+            </ul>
           </nav>
-          <button class="login-btn mobile-only">Log In</button>
-      </div>
-    </div>
-    <div class="header-content">
-        <h4>All your favorite TV in one place</h4>
-        <div class="text-xxl">"The best all-in-one streaming service of 2023"</div>
-        <div class="header-text-1">With no-hassle setup, no hidden fees, and unlimited VOD, you get the best movies, shows, and sports along with 12,000+ live TV channels like DISNEY+, ESPN+, HBO MAX.</div>
-        <div class="header-text-2">
-          A new infrastructure for providing a more stable and powerful IPTV service.
         </div>
-        <a href="#live"><button class="btn btn-primary">Get Started</button></a>
-        <div class="legal-text">
-          From the latest movies to original series and classic favorites, enjoy the most popular TV on demand.
-        </div>
-      </div>
-  </header>
-
-  <button id="menu-btn" class="burger" type="button">
-    <span class="burger-top"></span>
-    <span class="burger-middle"></span>
-    <span class="burger-bottom"></span>
-  </button>
 
 
-   <section class="sub-header">
-     <div class="icons">
-       <i class="fa-solid fa-dollar-sign fa-4x"></i>
-       <div class="icon-text">
-        <div class="header-text">Affordable Prices</div>
-        <div class="leg-text">Pay Zero fees with our discount program</div>
-       </div>
-     </div>
-     <div class="icons">
-       <i class="fas fa-heart fa-4x"></i>
-      <div class="icon-text">
-        <div class="header-text">24/7 Support</div>
-        <div class="leg-text">Unrivaled support via email, or DM's</div>
-      </div>
-     </div>
-     <div class="icons">
-       <i class="fa-solid fa-bolt fa-4x"></i>
-      <div class="icon-text">
-        <div class="header-text">Fast Service</div>
-        <div class="leg-text">You will receive your order within 24 hours</div>
-      </div>
-     </div>
-      <div class="icons">
-        <i class="fas fa-server fa-4x"></i>
-        <div class="icon-text">
-          <div class="header-text">Stable Servers</div>
-          <div class="leg-text">Daily, weekly, and monthly updated content</div>
-        </div>
-      </div>
-   </section>
-
-   <section class="categories">
-    <h4>Included in all plans</h4>
-    <div class="text-xl">All The TV You Love</div>
-    <div  id="Covers" class="sub-text">
-      Get full access to the streaming library - a $5.99/month value. Watch full seasons of exclusive series, biggest live sports, groundbreaking documentaries, hit movies, current episodes, kids shows, and tons more.
-    </div>
-
-    <div class="covers">
-      <div class="cover-1">
-        <div class="cover-grad"></div>
-        <div class="cover-text">
-          <div class="sub-titles">Past & Current Seasons</div>
-          <h3>TV Shows</h3>
-        </div>
-      </div>
-      <div class="cover-2">
-        <div class="cover-grad"></div>
-        <div class="cover-text">
-          <div class="sub-titles">New & Classics</div>
-          <h3>Movies</h3>
-        </div>
-      </div>
-      <div class="cover-3">
-        <div class="cover-grad"></div>
-        <div class="cover-text">
-          <div class="sub-titles">Biggest Live</div>
-          <h3>Sports</h3>
-        </div>
-      </div>
-      <div class="cover-4">
-        <div class="cover-grad"></div>
-        <div class="cover-text">
-          <div class="sub-titles">Groundbreaking</div>
-          <h3>documentary</h3>
-        </div>
-      </div>
-      <div class="cover-5">
-        <div class="cover-grad"></div>
-        <div class="cover-text">
-          <div class="sub-titles">Breaking News</div>
-          <h3>24/7 News</h3>
-        </div>
-      </div>
-      <div  class="cover-6">
-        <div class="cover-grad"></div>
-        <div class="cover-text">
-          <div class="sub-titles">Entertainment</div>
-          <h3>For Kids</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="offer">
-    <div class="offer-top">
-      <h4>iPlayTV + LIVE TV, NOW WITH DISNEY+ AND ESPN+, HBO MAX and APPLE TV+</h4>
-      <div class="text-xl">Live TV Makes It Better</div>
-    </div>
-    <div class="offer-bottom">
-      <div class="sub-text">Get 12,000+ top channels with iPlayTV + Live TV with your favorite live sports, news, and
-        events - plus the entire
-        iPlayTV streaming library. Access endless entertainment with Disney+ and live sports with BEIN sports, ESPN+, and tons more.</div>
-      <h3>For a limited time, get iPlayTV + Live TV $49.99/ for 6 months.*</h3>
-      <button class="btn middle-btn">Get This Deal</button>
-      <div class="tiny-text">Not quite what you’re looking for? Get iPlayTV Live TV starting at only
-      $9.99/month.
-      Unlimited DVR recording.
-      *Price will increase to $11.99/month on 31/03/2024.</div>
-    </div>
-  </section>
-
-
-  <section class="tab-content">
-    <div class="tabs ">
-      <div class="container-tab">
-        <div id="tab-1" class="tab-item tab-border">
-          <p>Live Sports</p>
-        </div>
-        <div id="tab-2" class="tab-item">
-          <p>Breaking News</p>
-        </div>
-        <div id="tab-3" class="tab-item">
-          <p>Biggest Events</p>
-        </div>
-      </div>
-    </div>
-    
-    <div id="tab-1-content" class="tab-content-item live-sports show">
-        <div class="live-sports-content">
-          <div class="text-xl">Live Sports</div>
-          <div class="sub-text">
-                Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA,
-              NHL, NFL, and more. Includes top local and iternational sports networks like BEIN, ABC, CBS Sports Network, ESPN, FOX, FS1, TNT,
-             SKY SPORTS and many more.
-          </div>
-        
-          <div class="live-sports-logos">
-            <div>
-              <img src="img/live-sports-logo-1.png" alt="" />
-            </div>
-            <div>
-              <img src="img/live-sports-logo-2.png" alt="" />
-            </div>
-            <div>
-              <img src="img/live-sports-logo-3.png" alt="" />
-            </div>
-            <div>
-              <img src="img/live-sports-logo-3.svg" alt="" />
+        <header class="header">
+          <div class="header-top">
+            <div class="container flex">
+                    <img src="img/logo.png" alt="">
+                <nav>
+                    <ul>
+                        <li class="mobile-only"><a href="channels.html">Channels</a></li>
+                        <li class="mobile-only"><a href="pricing.html">Plans & Pricing</a></li>
+                        <li class="mobile-only"><a href="faq.html">FAQ</a></li>
+                        <li class="mobile-only"><a href="about-us.html">About</a></li>
+                    </ul>
+                </nav>
+                <button class="login-btn mobile-only">Log In</button>
             </div>
           </div>
-        
-          <div class="legal-text">
-            Live TV plan required. Regional restrictions, blackouts and additional
-            terms apply. <a href="terms.html">See Details</a>
-          </div>
-        </div>
-    </div>
-
-    <div id="tab-2-content" class="tab-content-item breaking-news">
-        <div class="breaking-news-content">
-          <div class="text-xl">breaking News</div>
-          <div class="sub-text">
-            Keep pace with what's going on locally and globally with trusted opinions from all the top news
-            networks.
-          </div>
-        
-          <div class="breaking-news-logos">
-            <div>
-              <img src="img/breaking-news-logo-1.png" alt="" />
-            </div>
-            <div>
-              <img src="img/breaking-news-logo-2.png" alt="" />
-            </div>
-            <div>
-              <img src="img/breaking-news-logo-3.png" alt="" />
-            </div>
-            <div>
-              <img src="img/breaking-news-logo-4.png" alt="" />
-            </div>
-          </div>
-        
-          <div class="legal-text">
-            Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="terms.html">See Details</a>
-          </div>
-        </div>
-    </div>
-    
-    <div id="tab-3-content" class="tab-content-item biggest-event">
-        <div class="biggest-event-content">
-          <div class="text-xl">Biggest Events</div>
-          <div class="sub-text">
-            Spectacular, can't-miss moments like the Oscars, Olympics, Grammys®, Oscars®, Emmys®, and more.
-          </div>
-        
-          <div class="biggest-event-logos">
-            <div>
-              <img src="img/biggest-event-logo-1.png" alt="" />
-            </div>
-            <div>
-              <img src="img/biggest-event-logo-2.png" alt="" />
-            </div>
-            <div>
-              <img src="img/biggest-event-logo-3.png" alt="" />
-            </div>
-            <div>
-              <img src="img/biggest-event-logo-4.png" alt="" />
-            </div>
-        </div>
-        <div class="legal-text">
-          Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="terms.html">See Details</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  
-  <section id="live" class="live">
-    <div class="live-border">
-      <div class="live-top">
-        <div class="text-xl-dark">Meet Your New TV Experience</div>
-        <div class="light-text">No hidden fees, equipment rentals, or installation appointments. easy setup.</div>
-      </div>
-      
-        <div class="showcase-card">
-          <div class="card hide-card">
-            <div class="card-title">
-              <div class="topic">Basic</div>
-              <div class="leg-text">Good for testing purposes</div>
-                <div class="price">
-                  <div class="text-xl">$9<span>.99</span></div>
-                  <div class="sub-title">/mo</div>
-                </div>
+          <div class="header-content">
+              <h4>All your favorite TV in one place</h4>
+              <div class="text-xxl">"The best all-in-one streaming service of 2023"</div>
+              <div class="header-text-1">With no-hassle setup, no hidden fees, and unlimited VOD, you get the best movies, shows, and sports along with 12,000+ live TV channels like DISNEY+, ESPN+, HBO MAX.</div>
+              <div class="header-text-2">
+                A new infrastructure for providing a more stable and powerful IPTV service.
               </div>
-              <button class="btn btn-outline-dark paddle_button">Order Now</button>
-            <div class="card-body">
-              <nav>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
-                    <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
-                    <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
-                    <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
-                    <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
-                    <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
-                    <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
-                    <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
-                    <li><i class="fa-solid fa-check"></i>Watch on your favorite device</li>
-                    <li><i class="fa-solid fa-check"></i>All Around The World</li>
-                    <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="card hide-card">
-            <div class="card-title">
-              <div class="topic">Advanced</div>
-              <span class="ribbon">33% off</span>
-                <div class="price">
-                  <div class="text-xl">$19<span>.99</span></div>
-                  <div class="sub-title">/3 month</div>
-                </div>
-              </div>
-              <button id="deluxe" class="btn btn-outline-dark paddle_button">Order Now</button>
-            <div class="card-body">
-              <nav>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
-                    <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
-                    <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
-                    <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
-                    <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
-                    <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
-                    <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
-                    <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
-                    <li><i class="fa-solid fa-check"></i>Watch on your favorite device</li>
-                    <li><i class="fa-solid fa-check"></i>All Around The World</li>
-                    <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          
-          <div class="card hide-card">
-            <div class="card-title">
-              <div class="topic">Ultimate</div>
-              <span class="ribbon">33% off</span>
-              <div class="price">
-                <div class="text-xl">$49<span>.99</span></div>
-                <div class="sub-title">/6 month</div>
+              <a href="#live"><button class="btn btn-primary">Get Started</button></a>
+              <div class="legal-text">
+                From the latest movies to original series and classic favorites, enjoy the most popular TV on demand.
               </div>
             </div>
-            <button id="ultimate" class="btn btn-outline-dark paddle_button">Order Now</button>
-            <div class="card-body">
-              <nav>
-                <ul>
-                  <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
-                  <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
-                  <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
-                  <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
-                  <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
-                  <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
-                  <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
-                  <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
-                  <li><i class="fa-solid fa-check"></i>Watch on your favorite devices</li>
-                  <li><i class="fa-solid fa-check"></i>All Around The World</li>
-                  <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
-                </ul>
-              </nav>
+        </header>
+
+        <button id="menu-btn" class="burger" type="button">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </button>
+
+
+        <section class="sub-header">
+          <div class="icons">
+            <i class="fa-solid fa-dollar-sign fa-4x"></i>
+            <div class="icon-text">
+              <div class="header-text">Affordable Prices</div>
+              <div class="leg-text">Pay Zero fees with our discount program</div>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-heart fa-4x"></i>
+            <div class="icon-text">
+              <div class="header-text">24/7 Support</div>
+              <div class="leg-text">Unrivaled support via email, or DM's</div>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-bolt fa-4x"></i>
+            <div class="icon-text">
+              <div class="header-text">Fast Service</div>
+              <div class="leg-text">You will receive your order within 24 hours</div>
+            </div>
+          </div>
+            <div class="icons">
+              <i class="fas fa-server fa-4x"></i>
+              <div class="icon-text">
+                <div class="header-text">Stable Servers</div>
+                <div class="leg-text">Daily, weekly, and monthly updated content</div>
+              </div>
+            </div>
+        </section>
+
+        <section class="categories">
+        <h4>Included in all plans</h4>
+        <div class="text-xl">All The TV You Love</div>
+        <div  id="Covers" class="sub-text">
+          Get full access to the streaming library - a $5.99/month value. Watch full seasons of exclusive series, biggest live sports, groundbreaking documentaries, hit movies, current episodes, kids shows, and tons more.
+        </div>
+
+        <div class="covers">
+          <div class="cover-1">
+            <div class="cover-grad"></div>
+            <div class="cover-text">
+              <div class="sub-titles">Past & Current Seasons</div>
+              <h3>TV Shows</h3>
+            </div>
+          </div>
+          <div class="cover-2">
+            <div class="cover-grad"></div>
+            <div class="cover-text">
+              <div class="sub-titles">New & Classics</div>
+              <h3>Movies</h3>
+            </div>
+          </div>
+          <div class="cover-3">
+            <div class="cover-grad"></div>
+            <div class="cover-text">
+              <div class="sub-titles">Biggest Live</div>
+              <h3>Sports</h3>
+            </div>
+          </div>
+          <div class="cover-4">
+            <div class="cover-grad"></div>
+            <div class="cover-text">
+              <div class="sub-titles">Groundbreaking</div>
+              <h3>documentary</h3>
+            </div>
+          </div>
+          <div class="cover-5">
+            <div class="cover-grad"></div>
+            <div class="cover-text">
+              <div class="sub-titles">Breaking News</div>
+              <h3>24/7 News</h3>
+            </div>
+          </div>
+          <div  class="cover-6">
+            <div class="cover-grad"></div>
+            <div class="cover-text">
+              <div class="sub-titles">Entertainment</div>
+              <h3>For Kids</h3>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="offer">
+          <div class="offer-top">
+            <h4>iPlayTV + LIVE TV, NOW WITH DISNEY+ AND ESPN+, HBO MAX and APPLE TV+</h4>
+            <div class="text-xl">Live TV Makes It Better</div>
+          </div>
+          <div class="offer-bottom">
+            <div class="sub-text">Get 12,000+ top channels with iPlayTV + Live TV with your favorite live sports, news, and
+              events - plus the entire
+              iPlayTV streaming library. Access endless entertainment with Disney+ and live sports with BEIN sports, ESPN+, and tons more.</div>
+            <h3>For a limited time, get iPlayTV + Live TV $49.99/ for 6 months.*</h3>
+            <button onclick="buyProduct(pro_01hcssmgm6s1r5ghvawkwevmzf)" class="btn middle-btn paddle_button">Get This Deal</button>
+            <div class="tiny-text">Not quite what you’re looking for? Get iPlayTV Live TV starting at only
+            $9.99/month.
+            Unlimited DVR recording.
+            *Price will increase to $11.99/month on 31/03/2024.</div>
+          </div>
+        </section>
+
+
+        <section class="tab-content">
+          <div class="tabs ">
+            <div class="container-tab">
+              <div id="tab-1" class="tab-item tab-border">
+                <p>Live Sports</p>
+              </div>
+              <div id="tab-2" class="tab-item">
+                <p>Breaking News</p>
+              </div>
+              <div id="tab-3" class="tab-item">
+                <p>Biggest Events</p>
+              </div>
             </div>
           </div>
           
-          <div class="card card-shadow">
-            <div class="card-title">
-              <div class="topic">Premium</div>
-              <span class="ribbon">33% off</span>
-              <div class="price">
-                <div class="text-xl">$69<span>.99</span></div>
-                <div class="sub-title">/12 month</div>
+          <div id="tab-1-content" class="tab-content-item live-sports show">
+              <div class="live-sports-content">
+                <div class="text-xl">Live Sports</div>
+                <div class="sub-text">
+                      Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA,
+                    NHL, NFL, and more. Includes top local and iternational sports networks like BEIN, ABC, CBS Sports Network, ESPN, FOX, FS1, TNT,
+                  SKY SPORTS and many more.
+                </div>
+              
+                <div class="live-sports-logos">
+                  <div>
+                    <img src="img/live-sports-logo-1.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/live-sports-logo-2.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/live-sports-logo-3.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/live-sports-logo-3.svg" alt="" />
+                  </div>
+                </div>
+              
+                <div class="legal-text">
+                  Live TV plan required. Regional restrictions, blackouts and additional
+                  terms apply. <a href="terms.html">See Details</a>
+                </div>
+              </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item breaking-news">
+              <div class="breaking-news-content">
+                <div class="text-xl">breaking News</div>
+                <div class="sub-text">
+                  Keep pace with what's going on locally and globally with trusted opinions from all the top news
+                  networks.
+                </div>
+              
+                <div class="breaking-news-logos">
+                  <div>
+                    <img src="img/breaking-news-logo-1.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/breaking-news-logo-2.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/breaking-news-logo-3.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/breaking-news-logo-4.png" alt="" />
+                  </div>
+                </div>
+              
+                <div class="legal-text">
+                  Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="terms.html">See Details</a>
+                </div>
+              </div>
+          </div>
+          
+          <div id="tab-3-content" class="tab-content-item biggest-event">
+              <div class="biggest-event-content">
+                <div class="text-xl">Biggest Events</div>
+                <div class="sub-text">
+                  Spectacular, can't-miss moments like the Oscars, Olympics, Grammys®, Oscars®, Emmys®, and more.
+                </div>
+              
+                <div class="biggest-event-logos">
+                  <div>
+                    <img src="img/biggest-event-logo-1.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/biggest-event-logo-2.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/biggest-event-logo-3.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/biggest-event-logo-4.png" alt="" />
+                  </div>
+              </div>
+              <div class="legal-text">
+                Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="terms.html">See Details</a>
               </div>
             </div>
-            <button id="platinum" class="btn btn-dark paddle_button">Order Now</button>
-            <div class="card-body">
+          </div>
+        </section>
+
+
+    
+        <section id="live" class="live">
+          <div class="live-border">
+            <div class="live-top">
+              <div class="text-xl-dark">Meet Your New TV Experience</div>
+              <div class="light-text">No hidden fees, equipment rentals, or installation appointments. easy setup.</div>
+            </div>
+            
+              <div class="showcase-card">
+                <div class="card hide-card">
+                  <div class="card-title">
+                    <div class="topic">Basic</div>
+                    <div class="leg-text">Good for testing purposes</div>
+                      <div class="price">
+                        <div class="text-xl">$9<span>.99</span></div>
+                        <div class="sub-title">/mo</div>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-dark paddle_button">Order Now</button>
+                  <div class="card-body">
+                    <nav>
+                      <ul>
+                          <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
+                          <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
+                          <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
+                          <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
+                          <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
+                          <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
+                          <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
+                          <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
+                          <li><i class="fa-solid fa-check"></i>Watch on your favorite device</li>
+                          <li><i class="fa-solid fa-check"></i>All Around The World</li>
+                          <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="card hide-card">
+                  <div class="card-title">
+                    <div class="topic">Advanced</div>
+                    <span class="ribbon">33% off</span>
+                      <div class="price">
+                        <div class="text-xl">$19<span>.99</span></div>
+                        <div class="sub-title">/3 month</div>
+                      </div>
+                    </div>
+                    <button id="deluxe" class="btn btn-outline-dark paddle_button">Order Now</button>
+                  <div class="card-body">
+                    <nav>
+                      <ul>
+                          <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
+                          <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
+                          <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
+                          <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
+                          <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
+                          <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
+                          <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
+                          <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
+                          <li><i class="fa-solid fa-check"></i>Watch on your favorite device</li>
+                          <li><i class="fa-solid fa-check"></i>All Around The World</li>
+                          <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+                
+                <div class="card hide-card">
+                  <div class="card-title">
+                    <div class="topic">Ultimate</div>
+                    <span class="ribbon">33% off</span>
+                    <div class="price">
+                      <div class="text-xl">$49<span>.99</span></div>
+                      <div class="sub-title">/6 month</div>
+                    </div>
+                  </div>
+                  <button id="ultimate" class="btn btn-outline-dark paddle_button">Order Now</button>
+                  <div class="card-body">
+                    <nav>
+                      <ul>
+                        <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
+                        <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
+                        <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
+                        <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
+                        <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
+                        <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
+                        <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
+                        <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
+                        <li><i class="fa-solid fa-check"></i>Watch on your favorite device</li>
+                        <li><i class="fa-solid fa-check"></i>All Around The World</li>
+                        <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                
+                <div class="card card-shadow">
+                  <div class="card-title">
+                    <div class="topic">Premium</div>
+                    <span class="ribbon">33% off</span>
+                    <div class="price">
+                      <div class="text-xl">$69<span>.99</span></div>
+                      <div class="sub-title">/12 month</div>
+                    </div>
+                  </div>
+                  <button id="platinum" class="btn btn-dark paddle_button">Order Now</button>
+                  <div class="card-body">
+                    <nav>
+                      <ul>
+                        <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
+                        <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
+                        <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
+                        <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
+                        <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
+                        <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
+                        <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
+                        <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
+                        <li><i class="fa-solid fa-check"></i>Watch on your favorite device</li>
+                        <li><i class="fa-solid fa-check"></i>All Around The World</li>
+                        <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="tiny-text">*Price will increase to $76.99/month on 31/03/2024.
+              *Auto-renews at $76.99/12month at the expiration of 3-month promotional period (if applicable).</div>
+          </div>
+        </section>  
+
+
+
+        <section class="cable container">
+          <div class="text-xxl">Say Goodbye To Extra Cable Fees</div>
+
+          <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <div class="bandwitch"></div>
+                    <th class="image"><img src="img/logo.png" alt=""><span>+ LIVE TV</span></th>
+                    <th class="tittle">Cable/Satellite TV Providers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="header-text">Broadcast TV fee</td>
+                    <td class="zero">$0</td>
+                    <td class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></td>
+                </tr>
+                <tr>
+                    <td class="header-text">Regional sports fee*</td>
+                    <td class="zero">$0</td>
+                    <td class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></td>
+                </tr>
+                <tr>
+                    <td class="header-text">Set-top box or related rental fees</td>
+                    <td class="zero">$0</td>
+                    <td class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></td>
+                </tr>
+                <tr>
+                    <td class="header-text">Miscellaneous administrative/ convenience fees</td>
+                    <td class="zero">$0</td>
+                    <td class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="tiny-text">*Some cable providers charge a regional sports fee.</div>
+        </section>
+
+
+
+
+        <section class="channels">
+          <div class="text-xl-dark">All Your TV in One Place</div>
+          <div class="sub-text">
+            Get full access to the entire iPlayTV streaming library along with your favorite live sports, breaking news,
+            exclusiv
+            documentaries, can't miss events, and current shows.
+          </div>
+          <div class="chanels-logos">
+            <div class="line-1">
+              <img src="logos/-1.png" alt="">
+              <img src="logos/-2.png" alt="">
+              <img src="logos/-3.png" alt="">
+              <img src="logos/-4.png" alt="">
+              <img src="logos/-5.png" alt="">
+              <img src="logos/-6.png" alt="">
+              <img src="logos/-7.png" alt="">
+              <img src="logos/-8.png" alt="">
+              <img src="logos/-9.png" alt="">
+              <img src="logos/-10.png" alt="">
+              <img src="logos/-11.png" alt="">
+              <img src="logos/-12.png" alt="">
+              <img src="logos/-13.png" alt="">
+            </div>
+            <div class="line-2">
+              <img src="logos/-14.png" alt="">
+              <img src="logos/-15.png" alt="">
+              <img src="logos/-16.png" alt="">
+              <img src="logos/-17.png" alt="">
+              <img src="logos/-18.png" alt="">
+              <img src="logos/-19.png" alt="">
+              <img src="logos/-20.png" alt="">
+              <img src="logos/-21.png" alt="">
+              <img src="logos/-22.png" alt="">
+              <img src="logos/-23.png" alt="">
+              <img src="logos/-24.png" alt="">
+              <img src="logos/-25.png" alt="">
+              <img src="logos/-26.png" alt="">
+            </div>
+            <div class="line-3">
+              <img src="logos/-27.png" alt="">
+              <img src="logos/-28.png" alt="">
+              <img src="logos/-29.png" alt="">
+              <img src="logos/-30.png" alt="">
+              <img src="logos/-31.png" alt="">
+              <img src="logos/-32.png" alt="">
+              <img src="logos/-33.png" alt="">
+              <img src="logos/-34.png" alt="">
+              <img src="logos/-35.png" alt="">
+              <img src="logos/-36.png" alt="">
+              <img src="logos/-37.png" alt="">
+              <img src="logos/-38.png" alt="">
+              <img src="logos/-39.png" alt="">
+            </div>
+            <div class="line-4">
+              <img src="logos/-40.png" alt="">
+              <img src="logos/-41.png" alt="">
+              <img src="logos/-42.png" alt="">
+              <img src="logos/-43.png" alt="">
+              <img src="logos/-44.png" alt="">
+              <img src="logos/-45.png" alt="">
+              <img src="logos/-46.png" alt="">
+              <img src="logos/-47.png" alt="">
+              <img src="logos/-48.png" alt="">
+              <img src="logos/-49.png" alt="">
+              <img src="logos/-50.png" alt="">
+              <img src="logos/-51.png" alt="">
+              <img src="logos/-52.png" alt="">
+            </div>
+            <div class="line-5">
+              <img src="logos/-53.png" alt="">
+              <img src="logos/-54.png" alt="">
+              <img src="logos/-55.png" alt="">
+              <img src="logos/-56.png" alt="">
+              <img src="logos/-57.png" alt="">
+              <img src="logos/-58.png" alt="">
+              <img src="logos/-59.png" alt="">
+              <img src="logos/-60.png" alt="">
+              <img src="logos/-61.png" alt="">
+              <img src="logos/-62.png" alt="">
+              <img src="logos/-63.png" alt="">
+              <img src="logos/-64.png" alt="">
+              <img src="logos/-65.png" alt="">
+            </div>
+            <div class="line-6">
+              <img src="logos/-66.png" alt="">
+              <img src="logos/-67.png" alt="">
+              <img src="logos/-68.png" alt="">
+              <img src="logos/-69.png" alt="">
+              <img src="logos/-70.png" alt="">
+              <img src="logos/-71.png" alt="">
+              <img src="logos/-72.png" alt="">
+              <img src="logos/-73.png" alt="">
+              <img src="logos/-74.png" alt="">
+              <img src="logos/-75.png" alt="">
+              <img src="logos/-76.png" alt="">
+              <img src="logos/-77.png" alt="">
+              <img src="logos/-78.png" alt="">
+            </div>
+            <div class="line-7">
+              <img src="logos/-79.png" alt="">
+              <img src="logos/-80.png" alt="">
+              <img src="logos/-81.png" alt="">
+              <img src="logos/-82.png" alt="">
+              <img src="logos/-83.png" alt="">
+              <img src="logos/-84.png" alt="">
+              <img src="logos/-85.png" alt="">
+              <img src="logos/-86.png" alt="">
+              <img src="logos/-87.png" alt="">
+              <img src="logos/-88.png" alt="">
+              <img src="logos/-89.png" alt="">
+              <img src="logos/-90.png" alt="">
+            </div>
+            <div class="line-8">
+              <img src="logos/-91.png" alt="">
+              <img src="logos/-92.png" alt="">
+              <img src="logos/-93.png" alt="">
+              <img src="logos/-94.png" alt="">
+              <img src="logos/-95.png" alt="">
+              <img src="logos/-96.png" alt="">
+              <img src="logos/-97.png" alt="">
+              <img src="logos/-98.png" alt="">
+              <img src="logos/-99.png" alt="">
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section id="tranding">
+          <div class="container-rev">
+            <div class="section-heading">
+              <h2>iPlayTV + Live TV Gives You More</h2>
+              <div class="sub-text">Choose iPlayTV + Live TV and get more than regular Cable TV or YouTube TV.</div>
+            </div>
+          </div>
+          <div class="container-rev">
+            <div class="swiper tranding-slider">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/1.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Platinum</h2>
+                      <h3 class="order-rating">
+                        <span>5</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/2.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Platinum</h2>
+                      <h3 class="order-rating">
+                        <span>5</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/3.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Deluxe</h2>
+                      <h3 class="order-rating">
+                        <span>4.8</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/4.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Ultimate</h2>
+                      <h3 class="order-rating">
+                        <span>4.9</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/5.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Platinum</h2>
+                      <h3 class="order-rating">
+                        <span>4.9</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/6.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Basic</h2>
+                      <h3 class="order-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/7.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Ultimate</h2>
+                      <h3 class="order-rating">
+                        <span>4.8</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/8.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Ultimate</h2>
+                      <h3 class="order-rating">
+                        <span>4.7</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/review/9.png" alt="">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="cover-grad"></div>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="order-name">Platinum</h2>
+                      <h3 class="order-rating">
+                        <span>5</span>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--Slied End-->
+              </div>
+
+              <div class="tranding-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <section class="faq">
+          <div class="text-xl-dark">Any Questions?</div>
+          <div class="wrapper">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <h3><span class="accordion-title">What is IPTV?</span></h3>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    IPTV stands for Internet Protocol Television, which is a digital TV broadcasting protocol that uses the
+                    internet
+                    to deliver TV programs and videos to viewers. With IPTV, users can access TV programs and video content
+                    through their
+                    internet connection, rather than through traditional terrestrial, satellite, or cable TV formats.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                  <h3><span class="accordion-title">How does IPTV work?</span></h3>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    IPTV is quite similar to surfing the internet as compared to any other traditional channel surfing. It uses
+                    the Internet
+                    Protocol technology, transport layer that is responsible for sending the data securely constitutes of IP data
+                    transfer.
+                    Hence, the data is securely transferred to viewers. When an online user clicks on any TV program or requests
+                    to play it,
+                    the video that is transmitted from different resources gets divided into data packets and sent it over to the
+                    internet.
+                    The data travels through the fiber-optic cable to the online user through the internet connection. The data
+                    through
+                    fiber travels much faster than any other medium preferred. Hence, the user can operate video on their
+                    smartphones or
+                    laptops.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                  <h3><span class="accordion-title">What do I need to get started with iPlayTV + Live TV?</span></h3>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    To start watching, you'll need a subscription, a supported device, and a high-speed internet connection.
+                    iPlayTV is
+                    available on many supported devices including:
+                  </p>
+                  <p>- Android phones and tablets</p>
+                  <p>- Apple iPhones and iPads</p>
+                  <p>- Apple TV (4th generation or later)</p>
+                  <p>- Chromecast</p>
+                  <p>- Echo Show</p>
+                  <p>- Fire TV and Fire TV Stick</p>
+                  <p>- Fire Tablets</p>
+                  <p>- LG TV (select models)</p>
+                  <p>- Nintendo Switch</p>
+                  <p>- Roku and Roku Stick (select models)</p>
+                  <p>- Samsung TV (select models)</p>
+                  <p>- Xbox 360, One, & Series X|S</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                  <h3><span class="accordion-title">Can I watch local sports and news in my area?</span></h3>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    iPlayTV Live TV subscribers can watch college football games on BEIN, NBC, CBS, ABC, BTN, FOX, BBC, ESPN, FS1,
+                    CBS, ESPN, and many more. <a href="channels.html">click here</a>
+                    to see which local and national channels are available to watch live in your area.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <h3><span class="accordion-title">Can I watch Live TV using a mobile hotspot?</span></h3>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    To get setup with iPlayTV Live TV plan we'll need to establish your home location with a residential,
+                    non-mobile internet
+                    connection. A mobile hotspot does not qualify as a non-mobile internet connection and therefore cannot be used
+                    as a home
+                    network.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-6" aria-expanded="false">
+                  <h3><span class="accordion-title">Can I watch live TV on multiple devices at the same time?</span></h3>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    A subscription to iPlayTV Live TV plan allows you to watch on one screen. If you want to enjoy iPlayTV
+                    simultaneously on
+                    more than 2 supported devices, we have not yet lived up to Netflix or Hulu. We are in the process of
+                    developing our
+                    services to live up to your expectations. Everyone in your household can watch it at home whenever they want.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-7" aria-expanded="false">
+                  <h3><span class="accordion-title">Do you offer any other plans?</span></h3>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Yes! We offer the iPlayTV Live TV plan for $9.99/ month <a href="pricing.html">Click Here</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-lists">
+              <ul>
+                <li class="list-head">BROWSE</li>
+                <li><a href="faq.html">F.A.Q</a></li>
+                <li><a href="channels.html">Channels</a></li>
+                <li><a href="pricing.html">Plans & Pricing</a></li>
+                <li><a href="/terms.html#Devices">Devices Compatibility</a></li>
+              </ul>
+              <ul>
+                <li><a href="#Covers">TV Shows</a></li>
+                <li><a href="#Covers">Movies</a></li>
+                <li><a href="#Covers">Sports</a></li>
+                <li><a href="#Covers">Documentary</a></li>
+                <li><a href="#Covers">Networks</a></li>
+                <li><a href="#Covers">Kids</a></li>
+              </ul>
+              <ul>
+                <li class="list-head">Networks</li>
+                <li>Bein Sport</li>
+                <li>BBC</li>
+                <li>HBO Max</li>
+                <li>FOX TV</li>
+                <li>Disney+, and ESPN+</li>
+              </ul>
+              <ul>
+                <li class="list-head">HELP</li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="guide.html">Guidelines</a></li>
+                <li>+1 768 311-9475</li>
+                <li>support@iplaystv.com</li>
+              </ul>
+            
+            </div>
+            <div class="divider"></div>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+              <i class="fa-brands fa-x-twitter fa-2x"></i>
+              <i class="fa-brands fa-instagram fa-2x"></i>
+              <a href="https://wa.me/212770157721"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </div>
+
+            <div class="terms">
               <nav>
                 <ul>
-                  <li><i class="fa-solid fa-check"></i>+12,000 Live Channel</li>
-                  <li><i class="fa-solid fa-check"></i>99.90% Server Uptime</li>
-                  <li><i class="fa-solid fa-check"></i>+9000 VOD</li>
-                  <li><i class="fa-solid fa-check"></i>Live Stream 24/h</li>
-                  <li><i class="fa-solid fa-check"></i>4K | HD | UHD Quality</li>
-                  <li><i class="fa-solid fa-check"></i>Anti-Freeze Technology</li>
-                  <li><i class="fa-solid fa-check"></i>TV Guide (EPG)</li>
-                  <li><i class="fa-solid fa-check"></i>M3U-MAG-Enigma2</li>
-                  <li><i class="fa-solid fa-check"></i>Watch on your favorite devices</li>
-                  <li><i class="fa-solid fa-check"></i>All Around The World</li>
-                  <li><i class="fa-solid fa-check"></i>Technical Assistance 24/7</li>
+                  <li>&copy 2024 iPlayTV, LLC</li>
+                  <li><a href="terms.html">Terms of Use</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="refund.html">Refund Policy</a></li>
+                  <li><a href="privacy.html#info">Do Not Sell My Personal Information</a></li>
                 </ul>
               </nav>
             </div>
           </div>
-        </div>
-        <div class="tiny-text">*Price will increase to $76.99/month on 31/03/2024.
-        *Auto-renews at $76.99/12month at the expiration of 3-month promotional period (if applicable).</div>
-    </div>
-</section>
+        </footer>
 
 
 
-
-<section class="channels">
-  <div class="text-xl-dark">All Your TV in One Place</div>
-  <div class="sub-text">
-    Get full access to the entire iPlayTV streaming library along with your favorite live sports, breaking news,
-    exclusiv
-    documentaries, can't miss events, and current shows.
-  </div>
-  <div class="chanels-logos">
-    <div class="line-1">
-      <img src="logos/-1.png" alt="">
-      <img src="logos/-2.png" alt="">
-      <img src="logos/-3.png" alt="">
-      <img src="logos/-4.png" alt="">
-      <img src="logos/-5.png" alt="">
-      <img src="logos/-6.png" alt="">
-      <img src="logos/-7.png" alt="">
-      <img src="logos/-8.png" alt="">
-      <img src="logos/-9.png" alt="">
-      <img src="logos/-10.png" alt="">
-      <img src="logos/-11.png" alt="">
-      <img src="logos/-12.png" alt="">
-      <img src="logos/-13.png" alt="">
-    </div>
-    <div class="line-2">
-      <img src="logos/-14.png" alt="">
-      <img src="logos/-15.png" alt="">
-      <img src="logos/-16.png" alt="">
-      <img src="logos/-17.png" alt="">
-      <img src="logos/-18.png" alt="">
-      <img src="logos/-19.png" alt="">
-      <img src="logos/-20.png" alt="">
-      <img src="logos/-21.png" alt="">
-      <img src="logos/-22.png" alt="">
-      <img src="logos/-23.png" alt="">
-      <img src="logos/-24.png" alt="">
-      <img src="logos/-25.png" alt="">
-      <img src="logos/-26.png" alt="">
-    </div>
-    <div class="line-3">
-      <img src="logos/-27.png" alt="">
-      <img src="logos/-28.png" alt="">
-      <img src="logos/-29.png" alt="">
-      <img src="logos/-30.png" alt="">
-      <img src="logos/-31.png" alt="">
-      <img src="logos/-32.png" alt="">
-      <img src="logos/-33.png" alt="">
-      <img src="logos/-34.png" alt="">
-      <img src="logos/-35.png" alt="">
-      <img src="logos/-36.png" alt="">
-      <img src="logos/-37.png" alt="">
-      <img src="logos/-38.png" alt="">
-      <img src="logos/-39.png" alt="">
-    </div>
-    <div class="line-4">
-      <img src="logos/-40.png" alt="">
-      <img src="logos/-41.png" alt="">
-      <img src="logos/-42.png" alt="">
-      <img src="logos/-43.png" alt="">
-      <img src="logos/-44.png" alt="">
-      <img src="logos/-45.png" alt="">
-      <img src="logos/-46.png" alt="">
-      <img src="logos/-47.png" alt="">
-      <img src="logos/-48.png" alt="">
-      <img src="logos/-49.png" alt="">
-      <img src="logos/-50.png" alt="">
-      <img src="logos/-51.png" alt="">
-      <img src="logos/-52.png" alt="">
-    </div>
-    <div class="line-5">
-      <img src="logos/-53.png" alt="">
-      <img src="logos/-54.png" alt="">
-      <img src="logos/-55.png" alt="">
-      <img src="logos/-56.png" alt="">
-      <img src="logos/-57.png" alt="">
-      <img src="logos/-58.png" alt="">
-      <img src="logos/-59.png" alt="">
-      <img src="logos/-60.png" alt="">
-      <img src="logos/-61.png" alt="">
-      <img src="logos/-62.png" alt="">
-      <img src="logos/-63.png" alt="">
-      <img src="logos/-64.png" alt="">
-      <img src="logos/-65.png" alt="">
-    </div>
-    <div class="line-6">
-      <img src="logos/-66.png" alt="">
-      <img src="logos/-67.png" alt="">
-      <img src="logos/-68.png" alt="">
-      <img src="logos/-69.png" alt="">
-      <img src="logos/-70.png" alt="">
-      <img src="logos/-71.png" alt="">
-      <img src="logos/-72.png" alt="">
-      <img src="logos/-73.png" alt="">
-      <img src="logos/-74.png" alt="">
-      <img src="logos/-75.png" alt="">
-      <img src="logos/-76.png" alt="">
-      <img src="logos/-77.png" alt="">
-      <img src="logos/-78.png" alt="">
-    </div>
-    <div class="line-7">
-      <img src="logos/-79.png" alt="">
-      <img src="logos/-80.png" alt="">
-      <img src="logos/-81.png" alt="">
-      <img src="logos/-82.png" alt="">
-      <img src="logos/-83.png" alt="">
-      <img src="logos/-84.png" alt="">
-      <img src="logos/-85.png" alt="">
-      <img src="logos/-86.png" alt="">
-      <img src="logos/-87.png" alt="">
-      <img src="logos/-88.png" alt="">
-      <img src="logos/-89.png" alt="">
-      <img src="logos/-90.png" alt="">
-    </div>
-    <div class="line-8">
-      <img src="logos/-91.png" alt="">
-      <img src="logos/-92.png" alt="">
-      <img src="logos/-93.png" alt="">
-      <img src="logos/-94.png" alt="">
-      <img src="logos/-95.png" alt="">
-      <img src="logos/-96.png" alt="">
-      <img src="logos/-97.png" alt="">
-      <img src="logos/-98.png" alt="">
-      <img src="logos/-99.png" alt="">
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-<section id="tranding">
-  <div class="container-rev">
-    <div class="section-heading">
-      <h2>iPlayTV + Live TV Gives You More</h2>
-      <div class="sub-text">Choose iPlayTV + Live TV and get more than regular Cable TV or YouTube TV.</div>
-    </div>
-  </div>
-  <div class="container-rev">
-    <div class="swiper tranding-slider">
-      <div class="swiper-wrapper">
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/1.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Platinum</h2>
-              <h3 class="order-rating">
-                <span>5</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+        <div class="modal">
+          <div class="modal-box">
+            <div class="modal-body">
+              <h3>Sign In <span>(Beta)</span></h3>
+              <form>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input type="email" id="email">
                 </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/2.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Platinum</h2>
-              <h3 class="order-rating">
-                <span>5</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="form-control">
+                  <label for="password">Password</label>
+                  <input type="password" id="password">
                 </div>
-              </h3>
+                <p><a href="#">Forgot your password?</a></p>
+                <button class="btn btn-dark">Log In</button>
+              </form>
             </div>
+            <div class="modal-footer">
+              <p>Don't have an account?<a href="#">Sing Up For Free</a></p>
+            </div>
+            <img src="/img/close.svg" alt="close" class="close">
           </div>
         </div>
+
         
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/3.png" alt="">
+
+
+
+        <div class="coockies">
+          <div class="coockie-top">
+            <i class="fa-solid fa-cookie-bite"></i>
+            <h3>Cookies Consent</h3>
           </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Deluxe</h2>
-              <h3 class="order-rating">
-                <span>4.8</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </h3>
-            </div>
+          <div class="data">
+            <p class="leg-text">This website using cookies to help you have a more relevant browsing experiance on the website. <a href="terms.html">More info!</a></p>
+          </div>
+          <div class="buttons">
+            <button class="cookies-btn" id="acceptBtn">I understand</button>
+            <button class="cookies-btn" id="declineBtn">Decline</button>
           </div>
         </div>
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/4.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Ultimate</h2>
-              <h3 class="order-rating">
-                <span>4.9</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/5.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Platinum</h2>
-              <h3 class="order-rating">
-                <span>4.9</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/6.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Basic</h2>
-              <h3 class="order-rating">
-                <span>4.5</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/7.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Ultimate</h2>
-              <h3 class="order-rating">
-                <span>4.8</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/8.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Ultimate</h2>
-              <h3 class="order-rating">
-                <span>4.7</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="img/review/9.png" alt="">
-          </div>
-          <div class="tranding-slide-content">
-            <div class="cover-grad"></div>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="order-name">Platinum</h2>
-              <h3 class="order-rating">
-                <span>5</span>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <!--Slied End-->
-      </div>
 
-      <div class="tranding-slider-control">
-        <div class="swiper-button-prev slider-arrow">
-          <i class="fa-solid fa-arrow-left"></i>
-        </div>
-        <div class="swiper-button-next slider-arrow">
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<section class="faq">
-  <div class="text-xl-dark">Any Questions?</div>
-  <div class="wrapper">
-    <div class="accordion">
-      <div class="accordion-item">
-        <button id="accordion-button-1" aria-expanded="false">
-          <h3><span class="accordion-title">What is IPTV?</span></h3>
-          <span class="icon" aria-hidden="true"></span>
-        </button>
-        <div class="accordion-content">
-          <p>
-            IPTV stands for Internet Protocol Television, which is a digital TV broadcasting protocol that uses the
-            internet
-            to deliver TV programs and videos to viewers. With IPTV, users can access TV programs and video content
-            through their
-            internet connection, rather than through traditional terrestrial, satellite, or cable TV formats.
-          </p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-2" aria-expanded="false">
-          <h3><span class="accordion-title">How does IPTV work?</span></h3>
-          <span class="icon" aria-hidden="true"></span>
-        </button>
-        <div class="accordion-content">
-          <p>
-            IPTV is quite similar to surfing the internet as compared to any other traditional channel surfing. It uses
-            the Internet
-            Protocol technology, transport layer that is responsible for sending the data securely constitutes of IP data
-            transfer.
-            Hence, the data is securely transferred to viewers. When an online user clicks on any TV program or requests
-            to play it,
-            the video that is transmitted from different resources gets divided into data packets and sent it over to the
-            internet.
-            The data travels through the fiber-optic cable to the online user through the internet connection. The data
-            through
-            fiber travels much faster than any other medium preferred. Hence, the user can operate video on their
-            smartphones or
-            laptops.
-          </p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-3" aria-expanded="false">
-          <h3><span class="accordion-title">What do I need to get started with iPlayTV + Live TV?</span></h3>
-          <span class="icon" aria-hidden="true"></span>
-        </button>
-        <div class="accordion-content">
-          <p>
-            To start watching, you'll need a subscription, a supported device, and a high-speed internet connection.
-            iPlayTV is
-            available on many supported devices including:
-          </p>
-          <p>- Android phones and tablets</p>
-          <p>- Apple iPhones and iPads</p>
-          <p>- Apple TV (4th generation or later)</p>
-          <p>- Chromecast</p>
-          <p>- Echo Show</p>
-          <p>- Fire TV and Fire TV Stick</p>
-          <p>- Fire Tablets</p>
-          <p>- LG TV (select models)</p>
-          <p>- Nintendo Switch</p>
-          <p>- Roku and Roku Stick (select models)</p>
-          <p>- Samsung TV (select models)</p>
-          <p>- Xbox 360, One, & Series X|S</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-4" aria-expanded="false">
-          <h3><span class="accordion-title">Can I watch local sports and news in my area?</span></h3>
-          <span class="icon" aria-hidden="true"></span>
-        </button>
-        <div class="accordion-content">
-          <p>
-            iPlayTV Live TV subscribers can watch college football games on BEIN, NBC, CBS, ABC, BTN, FOX, BBC, ESPN, FS1,
-            CBS, ESPN, and many more. <a href="channels.html">click here</a>
-            to see which local and national channels are available to watch live in your area.
-          </p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-5" aria-expanded="false">
-          <h3><span class="accordion-title">Can I watch Live TV using a mobile hotspot?</span></h3>
-          <span class="icon" aria-hidden="true"></span>
-        </button>
-        <div class="accordion-content">
-          <p>
-            To get setup with iPlayTV Live TV plan we'll need to establish your home location with a residential,
-            non-mobile internet
-            connection. A mobile hotspot does not qualify as a non-mobile internet connection and therefore cannot be used
-            as a home
-            network.
-          </p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-6" aria-expanded="false">
-          <h3><span class="accordion-title">Can I watch live TV on multiple devices at the same time?</span></h3>
-          <span class="icon" aria-hidden="true"></span>
-        </button>
-        <div class="accordion-content">
-          <p>
-            A subscription to iPlayTV Live TV plan allows you to watch on one screen. If you want to enjoy iPlayTV
-            simultaneously on
-            more than 2 supported devices, we have not yet lived up to Netflix or Hulu. We are in the process of
-            developing our
-            services to live up to your expectations. Everyone in your household can watch it at home whenever they want.
-          </p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-7" aria-expanded="false">
-          <h3><span class="accordion-title">Do you offer any other plans?</span></h3>
-          <span class="icon" aria-hidden="true"></span>
-        </button>
-        <div class="accordion-content">
-          <p>
-            Yes! We offer the iPlayTV Live TV plan for $9.99/ month <a href="pricing.html">Click Here</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-lists">
-      <ul>
-        <li class="list-head">BROWSE</li>
-        <li><a href="faq.html">F.A.Q</a></li>
-        <li><a href="channels.html">Channels</a></li>
-        <li><a href="pricing.html">Plans & Pricing</a></li>
-        <li><a href="/terms.html#Devices">Devices Compatibility</a></li>
-      </ul>
-      <ul>
-        <li><a href="#Covers">TV Shows</a></li>
-        <li><a href="#Covers">Movies</a></li>
-        <li><a href="#Covers">Sports</a></li>
-        <li><a href="#Covers">Documentary</a></li>
-        <li><a href="#Covers">Networks</a></li>
-        <li><a href="#Covers">Kids</a></li>
-      </ul>
-      <ul>
-        <li class="list-head">Networks</li>
-        <li>Bein Sport</li>
-        <li>BBC</li>
-        <li>HBO Max</li>
-        <li>FOX TV</li>
-        <li>Disney+, and ESPN+</li>
-      </ul>
-      <ul>
-        <li class="list-head">HELP</li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="guide.html">Guidelines</a></li>
-        <li>+1 768 311-9475</li>
-        <li>support@iplaystv.com</li>
-      </ul>
-     
-    </div>
-    <div class="divider"></div>
-    <div class="social-icons">
-      <i class="fa-brands fa-facebook fa-2x"></i>
-      <i class="fa-brands fa-x-twitter fa-2x"></i>
-      <i class="fa-brands fa-instagram fa-2x"></i>
-      <a href="https://wa.me/212770157721"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-    </div>
-
-    <div class="terms">
-      <nav>
-        <ul>
-          <li>&copy 2024 iPlayTV, LLC</li>
-          <li><a href="terms.html">Terms of Use</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="refund.html">Refund Policy</a></li>
-          <li><a href="privacy.html#info">Do Not Sell My Personal Information</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</footer>
-
-
-
-<div class="modal">
-  <div class="modal-box">
-    <div class="modal-body">
-      <h3>Sign In <span>(Beta)</span></h3>
-      <form>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="email" id="email">
-        </div>
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input type="password" id="password">
-        </div>
-        <p><a href="#">Forgot your password?</a></p>
-        <button class="btn btn-dark">Log In</button>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <p>Don't have an account?<a href="#">Sing Up For Free</a></p>
-    </div>
-    <img src="/img/close.svg" alt="close" class="close">
-  </div>
-</div>
-
-
-<script src="https://kit.fontawesome.com/06ab546f7a.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-55eb8377-262f-4b56-9189-80e1e492becf"></div>
-<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/paddle-payment.js"></script>
-</body>
+        <script src="https://kit.fontawesome.com/06ab546f7a.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-55eb8377-262f-4b56-9189-80e1e492becf"></div>
+        <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/coockies.js"></script>
+        <script src="../js/paddle-payment.js"></script>
+    </body>
 </html>
