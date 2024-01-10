@@ -2,6 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
+  "keywords": ["subscription IPTV", "iptv", "Priemer league","netflix alternative"],
   "main": "index.js",
   "type": "module",
   "scripts": {
