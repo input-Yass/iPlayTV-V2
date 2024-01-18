@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rubik:ital,wght@0,300;@0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 :root {
     --primary-color: #06cd6a;
@@ -80,24 +81,6 @@ h3 {
     line-height: 12px;
 }
 
-button {
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #ccc;
-    color: #000;
-    opacity: 0.6;
-}
-
 .btn {
     display: inline-block;
     background: var(--primary-color);
@@ -112,11 +95,16 @@ button:hover {
     letter-spacing: 1px;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all 0.8s ease-in;
 }
 
 .middle-btn:hover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
+
+
+
+
 
 .header {
     width: 100%;
@@ -134,15 +122,61 @@ button:hover {
     position: absolute;
     width: 100px;
     top: 25%;
-    left: 10%;
+    left: 5%;
 }
 
-.header button {
+.header i {
     position: absolute;
-    color: #15171c;
+    font-size: 25px;
     top: 25%;
-    right: 10%;
+    right: 5%;
 }
+
+.user-icon-popup {
+    position: absolute;
+    top: 70%;
+    right: 60px;
+    width: 190px;
+    padding: 10px;
+    background: var(--background-color);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.8s ease-in;
+    border: 1px solid #5a6172;
+    z-index: 3;
+    display: none;
+}
+
+.user-icon-popup.active {
+    display: block;
+}
+
+.user-icon-popup p {
+    font-size: 16px;
+    font-weight:bold;
+    color: #0b0c0f;
+}
+
+.user-icon-popup .login-btn {
+    background: #0b0c0f;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.user-icon-popup .login-btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
 
 
 .container {
@@ -351,104 +385,7 @@ button:hover {
 
 
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
-.modal-box {
-    margin: 10% auto;
-    width: 400px;
-    background: var(--background-color);
-    color: #0b0c0f;
-    position: relative;
-    animation: modalopen 1s;
-}
-
-.modal h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #0b0c0f;
-}
-
-.modal a {
-    color: steelblue;
-    font-size: 14px;
-    font-weight: lighter;
-    float: inline-end;
-}
-
-@keyframes modalopen {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.modal-body {
-    padding: 40px;
-}
-
-.modal-body .btn {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.modal .close {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.modal .sub-text {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-.modal .modal-footer {
-    background: rgb(232, 234, 237);
-    color: #333;
-    padding: 20px;
-    border-top: #eee 1px solid;
-    text-align: center;
-}
-
-.modal .modal-footer a {
-    color: #06cd6a;
-}
-
-.form-control {
-    margin: 16px 0;
-}
-
-.form-control label {
-    display: block;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.form-control input {
-    width: 100%;
-    border: 1px #5a6172 solid;
-    border-radius: 5px;
-    height: 40px;
-    padding: 5px;
-}
 
 
 
@@ -477,9 +414,9 @@ button:hover {
         height: 8vh;
     }
 
-    .header img {
-        width: 90px;
-        top: 20px;
+    .header img,
+    .header i {
+        top: 35px;
     }
 
     .container {

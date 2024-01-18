@@ -20,7 +20,7 @@
                 <li class="main-menu"><a href="pricing.html">Plans & Pricing</a></li>
                 <li class="main-menu"><a href="faq.html">FAQ</a></li>
                 <li class="main-menu"><a href="about-us.html">About</a></li>
-                <li class="main-menu"><button class="login-btn">Log In</button></li>
+                <li class="main-menu"><a href="login.html"><button class="login-btn">Log In</button></a></li>
             </ul>
           </nav>
         </div>
@@ -28,9 +28,10 @@
 
         <header class="header">
           <div class="header-top">
-            <div class="container flex">
-                    <img src="img/logo.png" alt="">
-                <nav>
+            <div class="container flex navbar">
+                    <img class="main-logo" src="img/logo.png" alt="">
+                    <img class="logo" src="img/dark-logo.png" alt="">
+                <nav class="nav">
                     <ul>
                         <li class="mobile-only"><a href="channels.html">Channels</a></li>
                         <li class="mobile-only"><a href="pricing.html">Plans & Pricing</a></li>
@@ -38,7 +39,6 @@
                         <li class="mobile-only"><a href="about-us.html">About</a></li>
                     </ul>
                 </nav>
-                <button class="login-btn mobile-only">Log In</button>
             </div>
           </div>
           <div class="header-content">
@@ -48,7 +48,7 @@
               <div class="header-text-2">
                 A new infrastructure for providing a more stable and powerful IPTV service.
               </div>
-              <a href="#live"><button class="btn btn-primary">Get Started</button></a>
+              <a href="signup.html"><button class="btn btn-primary">Get Started</button></a>
               <div class="legal-text">
                 From the latest movies to original series and classic favorites, enjoy the most popular TV on demand.
               </div>
@@ -278,7 +278,7 @@
             </div>
             
               <div class="showcase-card">
-                <div class="card hide-card">
+                <div class="card hide-card basic">
                   <div class="card-title">
                     <div class="topic">Basic</div>
                     <div class="leg-text">Good for testing purposes</div>
@@ -990,32 +990,6 @@
           </div>
         </footer>
 
-
-
-        <div class="modal">
-          <div class="modal-box">
-            <div class="modal-body">
-              <h3>Sign In <span>(Beta)</span></h3>
-              <form>
-                <div class="form-control">
-                  <label for="email">Email</label>
-                  <input type="email" id="email">
-                </div>
-                <div class="form-control">
-                  <label for="password">Password</label>
-                  <input type="password" id="password">
-                </div>
-                <p><a href="#">Forgot your password?</a></p>
-                <button class="btn btn-dark">Log In</button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <p>Don't have an account?<a href="#">Sing Up For Free</a></p>
-            </div>
-            <img src="/img/close.svg" alt="close" class="close">
-          </div>
-        </div>
-
         
 
 
@@ -1040,6 +1014,7 @@
         <div class="elfsight-app-55eb8377-262f-4b56-9189-80e1e492becf"></div>
         <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
         <script src="../js/main.js"></script>
+        <script src="../js/nav.js"></script>
         <script src="../js/coockies.js"></script>
         <script src="../js/paddle-payment.js"></script>
     </body>

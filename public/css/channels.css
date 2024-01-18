@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rubik:ital,wght@0,300;@0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 :root {
     --primary-color: #06cd6a;
@@ -91,63 +92,70 @@ ul {
 
 
 .navbar {
+    position: relative;
     height: 10vh;
 }
 
 .navbar img {
+    position: absolute;
     width: 100px;
-    padding-top: 10px;
+    top: 28px;
+    left: 90px;
 }
 
-.navbar ul {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar li {
-    padding: 10px;
-    margin: 0 5px;
-}
-
-.navbar nav a {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    margin: 0 30px;
-    letter-spacing: 1px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-button {
+.navbar i {
+    position: absolute;
+    top: 28px;
+    right: 90px;
+    font-size: 22px;
     cursor: pointer;
-    background: none;
+}
+
+.user-icon-popup {
+    position: absolute;
+    top: 90%;
+    right: 60px;
+    width: 190px;
+    padding: 10px;
+    background: var(--background-color);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.8s ease-in;
+    border: 1px solid #5a6172;
+    display: none;
+}
+
+.user-icon-popup.active {
+    display: block;
+}
+
+.user-icon-popup p {
+    font-size: 16px;
+    font-weight:bold;
+    color: #0b0c0f;
+}
+
+.user-icon-popup .login-btn {
+    background: #0b0c0f;
     border: none;
-    color: #15171c;
+    color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 20px;
-    border-radius: 5px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-button:hover {
-    background: #ccc;
-    color: #000;
-    opacity: 0.6;
+.user-icon-popup .login-btn:hover {
+    opacity: 0.8;
 }
+
+
+
+
+
 
 .channels {
     min-width: 1000px;
@@ -155,12 +163,13 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 5px;
     justify-content: center;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .channels a {
-    color: rgb(0, 89, 255);
+    color: steelblue;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -171,7 +180,7 @@ button:hover {
 }
 
 .channels img {
-    width: 85px;
+    width: 70px;
     padding: 0 10px;
 }
 
@@ -201,13 +210,12 @@ button:hover {
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding: 40px 0;
 }
 
 .network img {
-    height: 320px;
-    width: 200px;
+    width: 180px;
     border-radius: 16px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
     object-fit: cover;
@@ -225,7 +233,7 @@ button:hover {
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
     padding: 40px 0;
 }
 
@@ -237,8 +245,8 @@ button:hover {
 }
 
 .league img {
-    height: 120px;
-    width: 220px;
+    height: 100px;
+    width: 180px;
     border-radius: 16px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
     object-fit: cover;
@@ -247,14 +255,14 @@ button:hover {
 .champions {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .champions img {
-    height: 220px;
-    width: 220px;
+    height: 180px;
+    width: 180px;
     border-radius: 16px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
     object-fit: cover;
@@ -360,104 +368,6 @@ button:hover {
 
 
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-box {
-    margin: 10% auto;
-    width: 400px;
-    background: var(--background-color);
-    color: #0b0c0f;
-    position: relative;
-    animation: modalopen 1s;
-}
-
-.modal h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #0b0c0f;
-}
-
-.modal a {
-    color: steelblue;
-    font-size: 14px;
-    font-weight: lighter;
-    float: inline-end;
-}
-
-@keyframes modalopen {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.modal-body {
-    padding: 40px;
-}
-
-.modal-body .btn {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.modal .close {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.modal .sub-text {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-.modal .modal-footer {
-    background: rgb(232, 234, 237);
-    color: #333;
-    padding: 20px;
-    border-top: #eee 1px solid;
-    text-align: center;
-}
-
-.modal .modal-footer a {
-    color: #06cd6a;
-}
-
-.form-control {
-    margin: 16px 0;
-}
-
-.form-control label {
-    display: block;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.form-control input {
-    width: 100%;
-    border: 1px #5a6172 solid;
-    border-radius: 5px;
-    height: 40px;
-    padding: 5px;
-}
 
 
 
@@ -471,6 +381,7 @@ button:hover {
     .sub-text {
         font-size: 16px;
         padding: 0 60px;
+        margin-bottom: 30px;
     }
 
     .network {
@@ -495,27 +406,29 @@ button:hover {
 
 @media (max-width: 786px) {
 
-    .navbar {
-            height: 8vh;
+        .navbar {
+                height: 8vh;
+            }
+
+        .navbar img {
+            width: 100px;
+            top: 40%;
+            left: 30px;
         }
 
-    .container {
-            max-width: 450px;
+        .navbar i {
+            top: 40%;
+            right: 30px;
         }
+
+        .container {
+                max-width: 450px;
+            }
 
         .container-flex {
             display: flex;
             justify-content: space-between;
         }
-
-    .channels {
-        min-width: 400px;
-        display: flex;
-    }
-
-    .channels img {
-        width: 60px;
-    }
 
     .sub-text {
         width: 390px;
@@ -523,14 +436,6 @@ button:hover {
         margin-bottom: 24px;
         padding-bottom: 40px;
         }
-
-    .navbar ul {
-            display: none;
-        }
-
-    .navbar img {
-        width: 100px;
-    }
 
     .text-xl-dark {
         font-size: 32px;
@@ -544,10 +449,14 @@ button:hover {
         font-size: 15px;
         padding: 0 20px;
     }
+    
+    .channels {
+        min-width: 400px;
+        display: flex;
+    }
 
     .channels img {
-        width: 75px;
-        padding: 5px;
+        width: 60px;
     }
 
     .network {

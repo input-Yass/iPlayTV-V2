@@ -2,17 +2,26 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "keywords": ["subscription IPTV", "iptv", "Priemer league","netflix alternative"],
+  "keywords": [
+    "subscription IPTV",
+    "iptv",
+    "Priemer league",
+    "netflix alternative",
+    "hulu alternative"
+  ],
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon server.js"
   },
   "author": "Eren19",
   "license": "ISC",
   "dependencies": {
     "@paddle/paddle-js": "^0.5.4",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "firebase": "^10.7.1",
+    "nodemon": "^3.0.2"
   }
 }

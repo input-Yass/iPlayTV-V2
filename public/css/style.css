@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rubik:ital,wght@0,300;@0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary-color: #1fe783;
@@ -25,15 +25,6 @@ body {
     scroll-behavior: smooth;
     letter-spacing: 1px;
 }
-
-a {
-    color: #fff;
-    
-}
-
-a:hover {
-    color: var(--primary-color);
-} 
 
 ul {
     list-style-type: none;
@@ -236,59 +227,114 @@ h4 {
 }
 
 .header img {
-    width: 110px;
-    padding: 30px 0;
+    width: 100px;
+    padding: 22px 0;
+}
+
+.logo,
+.hide {
+    display: none;
+}
+
+.logo.block {
+    display: block;
 }
 
 .header-top {
-    position: sticky;
-    padding-bottom: 20px;
-    z-index: 2;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 18px;
+    z-index: 10;
+}
+
+.header-top i {
+    font-size: 22px;
+    cursor: pointer;
 }
 
 .header-top nav ul {
-    position: absolute;
-    left: 200px;
-    top: 30px;
+    position: fixed;
+    top: 0;
+    left: 130px;
     display: flex;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 25px;
 }
 
 .header-top nav a {
-    color: #999;
+    color: #fff;
     font-size: 16px;
-    font-weight: 300;
-    margin: 0 30px;
-    opacity: 0.9;
+    font-weight: 400;
+    padding: 0 30px;
+    opacity: 0.7;
     cursor: pointer;
 }
 
 .header-top nav a:hover {
-    color: #fff;
-}
-
-.header-top .login-btn {
-    background: none;
-    border: none;
-    color: #999;
-    opacity: 0.9;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.header-top .login-btn:hover {
-    background: #666;
-    color: #fff;
+    opacity: 1;
 }
 
 .header .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar.bg {
+    background: var(--background-color);
+    transition: all 0.3s ease-in;
+    z-index: 99;
+}
+
+.navbar.bg a {
+    color: #0b0c0f;
+    opacity: 0.7;
+}
+
+.navbar.bg i {
+    color: #0b0c0f;
+}
+
+.user-icon-popup {
+    position: absolute;
+    top: 70%;
+    right: 25px;
+    width: 190px;
+    padding: 10px;
+    background: var(--background-color);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.8s ease-in;
+    display: none;
+}
+
+.user-icon-popup.active {
+    display: block;
+}
+
+.user-icon-popup p {
+    font-size: 16px;
+    font-weight:bold;
+    color: #0b0c0f;
+}
+
+.user-icon-popup .login-btn {
+    background: #0b0c0f;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.user-icon-popup .login-btn:hover {
+    opacity: 0.8;
 }
 
 
@@ -308,7 +354,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 80px;
+    padding: 140px 80px 40px 80px;
     margin: auto;
     z-index: 2;
 }
@@ -523,7 +569,7 @@ h4 {
     position: absolute;
     padding-top: 100px;
     padding-left: 90px;
-    z-index: 10;
+    z-index: 9;
 }
 
 .tabs .container-tab {
@@ -840,10 +886,6 @@ h4 {
     margin: 0 20px;
 }
 
-.btn-main span {
-    text-decoration: line-through;
-}
-
 
 
 
@@ -1043,15 +1085,17 @@ table thead::after {
 
 .tranding-slide-content-bottom h2 {
     color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .order-rating {
     display: flex;
-    gap: 1rem;
+    gap: 20px;
 }
 
 .rating i {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--rating);
 }
 
@@ -1390,125 +1434,13 @@ table thead::after {
 
 
 
-
-
-
-
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-box {
-    margin: 10% auto;
-    width: 400px;
-    background: var(--background-color);
-    color: #0b0c0f;
-    position: relative;
-    animation: modalopen 1s;
-}
-
-.modal h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #0b0c0f;
-}
-
-.modal span {
-    color: #06cd6a;
-}
-
-.modal a {
-    color: steelblue;
-    font-size: 14px;
-    font-weight: lighter;
-    float: inline-end;
-}
-
-@keyframes modalopen {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.modal-body {
-    padding: 40px;
-}
-
-.modal-body .btn {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.modal .close {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.modal .sub-text {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-.modal .modal-footer {
-    background: rgb(232, 234, 237);
-    color: #333;
-    padding: 20px;
-    border-top: #eee 1px solid;
-    text-align: center;
-}
-
-.modal .modal-footer a {
-    color: #06cd6a;
-}
-
-.form-control {
-    margin: 16px 0;
-}
-
-.form-control label {
-    display: block;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.form-control input {
-    width: 100%;
-    border: 1px #5a6172 solid;
-    border-radius: 5px;
-    height: 40px;
-    padding: 5px;
-}
-
-
-
-
-
-
-
 .coockies {
     position: fixed;
     bottom: 25px;
     left: -370px;
     max-width: 345px;
     width: 100%;
-    background: #fff;
+    background: var(--background-color);
     border-radius: 8px;
     padding: 15px 25px 22px;
     transition: left 0.6s ease;
@@ -1572,9 +1504,8 @@ table thead::after {
 
     .header .header-content {
         width: 70%;
-        padding: 20px 40px;
+        padding: 140px 40px 20px 40px;
         margin: auto;
-        z-index: 2;
     }
 
     .sub-header {
@@ -1593,19 +1524,27 @@ table thead::after {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .showcase-card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+    .card {
+        width: 310px;
     }
 
-    .card-shadow {
-        box-shadow: none;
-        transform: scale(1, 1);
+    .card.basic {
+        display: none;
+    }
+
+    .showcase-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
     }
 
     .card .text-xl {
         font-size: 45px;
+    }
+
+    .card .sub-title {
+        font-size: 18px;
+        margin-top: 10px;
     }
 
     .btn-dark {
@@ -1647,10 +1586,20 @@ table thead::after {
     .channels img {
         width: 68px;
     }
+
+    #tranding {
+        height: 60vh;
+    }
+
+    .tranding-slider-control .slider-arrow,
+    .tranding-slider-control .swiper-pagination {
+        display: none;
+    }
     
     .wrapper {
         width: 80%;
         margin: auto;
+        z-index: 10;
     }
 
     .coockies {
@@ -1775,6 +1724,7 @@ table thead::after {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
     z-index: 9;
   }
 
@@ -1796,18 +1746,20 @@ table thead::after {
     right: 40px;
     width: 300px;
     height: 300px;
+    padding: 20px 10px;
     background: #282C33;
     border-radius: 10px;
-    z-index: 9;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(120%);
-    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    overflow-x: hidden;
+    transition: all 0.6s ease;
+    display: none;
   }
 
   .show-menu {
-    transform: translateX(0);
+    display: block;
   }
 
   .mobile-main-menu ul {
@@ -1834,7 +1786,7 @@ table thead::after {
     display: inline-block;
     background: #0b0c0f;
     color: #fff;
-    width: 290px;
+    width: 270px;
     padding: 16px 40px;
     font-size: 14px;
     font-weight: 600;
@@ -1851,15 +1803,24 @@ table thead::after {
 
     .header {
         height: 100%;
+        overflow-x: hidden;
     }
 
     .header img {
-        width: 120px;
+        width: 100px;
+    }
+
+    .header-top i {
+        display: none;
+    }
+
+    .navbar.bg {
+        display: none;
     }
 
     .header .header-content {
         width: 95%;
-        padding: 0 8px;
+        padding: 100px 8px 0 8px;
         position: relative;
     }
 
@@ -2058,6 +2019,7 @@ table thead::after {
 
     .card {
         overflow: hidden;
+        width: 100%;
     }
 
     .showcase-card nav li  i{

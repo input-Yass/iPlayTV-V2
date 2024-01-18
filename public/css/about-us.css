@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rubik:ital,wght@0,300;@0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 :root {
     --primary-color: #00eD82;
@@ -37,7 +38,7 @@ ul {
     background: var(--primary-color);
     color: #000;
     min-width: 135px;
-    padding: 18px 20px;
+    padding: 16px 18px;
     font-size: 13px;
     font-weight: 600;
     line-height: 14px;
@@ -50,7 +51,6 @@ ul {
 
 .btn-main {
     color: #333;
-    padding: 18px 30px;
 }
 
 .btn-main:hover {
@@ -108,19 +108,22 @@ p {
     width: 100%;
     height: 95vh;
     position: relative;
-    background: url(../img/header.png) no-repeat center center / cover;
+    background: url(../img/head.jpg) no-repeat center center / cover;
 }
 
 .header img {
-    width: 120px;
-    margin: 20px 40px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 100px;
 }
 
-.header-top div {
+.header-top {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px;
 }
 
 .header-top {
@@ -164,7 +167,7 @@ p {
 }
 
 .header-content p {
-    padding: 0 80px;
+    width: 750px;
 }
 
 .mission {
@@ -274,111 +277,9 @@ p {
     padding-right: 20px;
 }
 
-
-
-
-
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-box {
-    margin: 10% auto;
-    width: 400px;
-    background: var(--background-color);
-    color: #0b0c0f;
-    position: relative;
-    animation: modalopen 1s;
-}
-
-.modal h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #0b0c0f;
-}
-
-.modal a {
-    color: steelblue;
-    font-size: 14px;
-    font-weight: lighter;
-    float: inline-end;
-}
-
-@keyframes modalopen {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.modal-body {
-    padding: 40px;
-}
-
-.modal-body .btn {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.modal .close {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.modal .sub-text {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-.modal .modal-footer {
-    background: rgb(232, 234, 237);
-    color: #333;
-    padding: 20px;
-    border-top: #eee 1px solid;
-    text-align: center;
-}
-
-.modal .modal-footer a {
-    color: #06cd6a;
-}
-
-.form-control {
-    margin: 16px 0;
-}
-
-.form-control label {
-    display: block;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.form-control input {
-    width: 100%;
-    border: 1px #5a6172 solid;
-    border-radius: 5px;
-    height: 40px;
-    padding: 5px;
-}
-
-
 @media(max-width: 1100px) {
+   
+    
     .header {
         height: 100%;
     }
@@ -389,12 +290,34 @@ p {
 
 
 @media(max-width: 786px) {
+
+    .btn-main,
+    .login-btn {
+        padding: 16px 20px;
+    }
+
     .header {
         height: 100%;
     }
+
+    .header img {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100px;
+    }
+
+    .header button {
+        margin-right: 0;
+    }
     
-    .header .btn-main {
-        display: none;
+    .header-content .text-xl {
+        padding: 0 30px;
+    }
+    
+    .header-content p {
+        padding: 0 30px;
+        width: 450px;
     }
 
     .join {

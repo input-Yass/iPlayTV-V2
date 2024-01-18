@@ -1,4 +1,4 @@
-const cookieBox = document.querySelector(".coockies"),
+const cookieBox = document.querySelector(".coockies");
   buttons = document.querySelectorAll(".cookies-btn");
 
 const executeCodes = () => {
