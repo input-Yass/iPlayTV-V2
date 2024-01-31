@@ -158,7 +158,6 @@ ul {
 
 
 .channels {
-    min-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,7 +374,7 @@ ul {
 @media (max-width: 1100px) {
 
     .channels img {
-        width: 68px;
+        width: 65px;
     }
 
     .sub-text {
@@ -385,15 +384,18 @@ ul {
     }
 
     .network {
+        min-width: 1000px;
         grid-template-columns: repeat(3, 1fr);
         margin: auto;
     }
 
     .league {
+        min-width: 1000px;
         grid-template-columns: repeat(3, 1fr);
     }
 
     .champions {
+        min-width: 1000px;
         grid-template-columns: repeat(3, 1fr);
     }
 }

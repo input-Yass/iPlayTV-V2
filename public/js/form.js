@@ -2,7 +2,8 @@ window.onload =() => {
     if(sessionStorage.user){
         user = JSON.parse(sessionStorage.user);
         if(user.email){
-            location.replace('/')
+            location.replace('/home')
+            showFormError('you are already logged in')
         }
     }
 }
@@ -25,7 +26,9 @@ formBtn.addEventListener('click', () => {
             showFormError('Enter your Email')
         } else if(password.value.length < 8){
             showFormError('Enter a strong password')
-        }  else if (!tac.checked){
+        } else if (Number(number) || number.value.length < 10){
+            showFormError('invalide number, please eneter valid one.')
+        } else if (!tac.checked){
             showFormError('You most agree to our Terms and Conditions!')
         } else {
             loader.style.display = 'block';

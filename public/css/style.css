@@ -213,6 +213,28 @@ h4 {
     line-height: 12px;
 }
 
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background: var(--background-color);
+    font-size: 14px;
+    color: orangered;
+    padding: 20px 40px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-transform: capitalize;
+    user-select: none;
+    z-index: 19;
+    opacity: 0;
+}
+
+.error.show {
+    opacity: 1;
+}
+
 
 
 
@@ -299,7 +321,7 @@ h4 {
 
 .user-icon-popup {
     position: absolute;
-    top: 70%;
+    top: 75%;
     right: 25px;
     width: 190px;
     padding: 10px;
@@ -449,7 +471,7 @@ h4 {
 .categories .covers {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    gap: 10px;
     margin-top: 40px;
 }
 
@@ -563,13 +585,16 @@ h4 {
 
 
 
-
+.tab-content {
+    position: relative;
+    
+}
 
 .tabs {
     position: absolute;
     padding-top: 100px;
     padding-left: 90px;
-    z-index: 9;
+    z-index: 3;
 }
 
 .tabs .container-tab {
@@ -580,11 +605,9 @@ h4 {
     text-align: center;
     padding: 10px;
     margin-top: 65px;
-    transition: all 0.3s ease;
 }
 
 .container-tab {
-    max-width: 550px;
     margin: auto;
     overflow: hidden;
 }
@@ -605,9 +628,8 @@ h4 {
 
 .tab-border {
     border-bottom: #fff solid 6px;
-    transition: all 0.6s ease-out;
+    transition: all 0.3s ease-in;
 }
-
 
 
 #tab-1-content,
@@ -1548,7 +1570,7 @@ table thead::after {
     }
 
     .btn-dark {
-        padding: 18px 30px;
+        padding: 14px 30px;
         font-size: 10px;
         font-weight: 600;
         line-height: 14px;
@@ -1599,7 +1621,6 @@ table thead::after {
     .wrapper {
         width: 80%;
         margin: auto;
-        z-index: 10;
     }
 
     .coockies {
@@ -1621,9 +1642,8 @@ table thead::after {
     }
 
     .btn-primary {
-        font-size: 14px;
-        width: 350px;
-        padding: 20px 0;
+        font-size: 12px;
+        min-width: 350px;
     }
 
     h4 {
@@ -1669,8 +1689,8 @@ table thead::after {
     .burger {
         display: block;
         position: absolute;
-        top: 35px;
-        right: 40px;
+        top: 30px;
+        right: 35px;
         z-index: 10;
         cursor: pointer;
         width: 20px;
@@ -1743,18 +1763,17 @@ table thead::after {
   .mobile-main-menu {
     position: absolute;
     top: 80px;
-    right: 40px;
+    right: 30px;
     width: 300px;
     height: 300px;
     padding: 20px 10px;
     background: #282C33;
     border-radius: 10px;
-    z-index: 100;
-    display: flex;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
     transition: all 0.6s ease;
+    z-index: 100;
     display: none;
   }
 
@@ -2048,7 +2067,7 @@ table thead::after {
     }
 
     .channels img {
-        width: 68px;
+        width: 65px;
         padding: 5px;
     }
 
@@ -2101,7 +2120,7 @@ table thead::after {
     }
 
     .wrapper {
-        padding: 10px;
+        padding: 0 20px;
         width: 100%;
     }
 
@@ -2139,10 +2158,6 @@ table thead::after {
         width: 100%;
         font-size: 12px;
         padding: 8px 0;
-    }
-
-    .modal-box {
-        width: 350px;
     }
 
     .coockies {

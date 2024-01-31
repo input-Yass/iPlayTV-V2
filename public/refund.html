@@ -14,11 +14,11 @@
 <body>
     <header class="header">
         <div class="header-top">
-            <a class="logo" href="index.html">
+            <a class="logo" href="/home">
                 <img src="img/dark-logo.png" alt="">
             </a>
             <div>
-                <button class="btn login-btn">Log In</button>
+                <button onclick="location.href = '/login'"  class="btn login-btn">Log In</button>
             </div>
         </div>
     </header>
@@ -72,11 +72,11 @@
             <div class="footer-lists">
                 <ul>
                     <li class="list-head">BROWSE</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="channels.html">Channels</a></li>
-                    <li><a href="faq.html">F.A.Q</a></li>
-                    <li><a href="pricing.html">Plans & Pricing</a></li>
-                    <li><a href="/terms.html#Devices">Devices Compatibility</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/channels">Channels</a></li>
+                    <li><a href="/faq">F.A.Q</a></li>
+                    <li><a href="/pricing">Plans & Pricing</a></li>
+                    <li><a href="/terms-conditions#Devices">Devices Compatibility</a></li>
                 </ul>
                 <ul>
                     <li><a href="#Covers">TV Shows</a></li>
@@ -96,8 +96,8 @@
                 </ul>
                 <ul>
                     <li class="list-head">HELP</li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="guide.html">Guidelines</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/guide">Guidelines</a></li>
                     <li>+1 768 311-9475</li>
                     <li>support@iplaystv.com</li>
                 </ul>
@@ -105,54 +105,29 @@
             </div>
             <div class="divider"></div>
             <div class="social-icons">
-                <i class="fa-brands fa-facebook fa-2x"></i>
-                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-x-twitter fa-2x"></i>
                 <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-telegram fa-2x"></i>
                 <a href="https://wa.me/212770157721"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+              </div>
+              
+              <div class="terms">
+                  <nav>
+                      <ul>
+                          <li>&copy 2024 iPlayTV, LLC</li>
+                          <li><a href="/terms-conditions">Terms of Use</a></li>
+                          <li><a href="/privacy-policy">Privacy Policy</a></li>
+                          <li><a href="/refund-policy">Refund Policy</a></li>
+                          <li><a href="/privacy-policy#info">Do Not Sell My Personal Information</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-    
-            <div class="terms">
-                <nav>
-                    <ul>
-                        <li>&copy 2024 iPlayTV, LLC</li>
-                        <li><a href="terms.html">Terms of Use</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="refund.html">Refund Policy</a></li>
-                        <li><a href="privacy.html">Do Not Sell My Personal Information</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 
 
-
-    <div class="modal">
-        <div class="modal-box">
-            <div class="modal-body">
-                <h3>Log In (Beta)</h3>
-                <form>
-                    <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="form-control">
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
-                    </div>
-                    <p><a href="#">Forgot your password?</a></p>
-                    <button class="btn btn-dark">Log In</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <p>Don't have an account?<a href="#">Sing Up For Free</a></p>
-            </div>
-            <img src="/img/close.svg" alt="close" class="close">
-        </div>
-    </div>
-
-
-    <script src="../js/main.js"></script>
-</body>
-</html>
+        
+        <script src="https://kit.fontawesome.com/06ab546f7a.js" crossorigin="anonymous"></script>
+    </body>
+    </html>

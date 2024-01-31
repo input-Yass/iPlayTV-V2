@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/checkout.css">
       <link rel="shortcut icon" type="image/png" href="img/favicone.png">
       <title>Home | iPlayTV</title>
   </head>
@@ -16,11 +17,11 @@
         <div id="mobile-menu" class="mobile-main-menu">
           <nav>
             <ul>
-                <li class="main-menu"><a href="channels.html">Channels</a></li>
-                <li class="main-menu"><a href="pricing.html">Plans & Pricing</a></li>
-                <li class="main-menu"><a href="faq.html">FAQ</a></li>
-                <li class="main-menu"><a href="about-us.html">About</a></li>
-                <li class="main-menu"><a href="login.html"><button class="login-btn">Log In</button></a></li>
+                <li class="main-menu"><a href="/channels">Channels</a></li>
+                <li class="main-menu"><a href="/pricing">Plans & Pricing</a></li>
+                <li class="main-menu"><a href="/faq">FAQ</a></li>
+                <li class="main-menu"><a href="/about-us">About</a></li>
+                <li class="main-menu"><a href="/login"><button class="login-btn">Log In</button></a></li>
             </ul>
           </nav>
         </div>
@@ -33,10 +34,10 @@
                     <img class="logo" src="img/dark-logo.png" alt="">
                 <nav class="nav">
                     <ul>
-                        <li class="mobile-only"><a href="channels.html">Channels</a></li>
-                        <li class="mobile-only"><a href="pricing.html">Plans & Pricing</a></li>
-                        <li class="mobile-only"><a href="faq.html">FAQ</a></li>
-                        <li class="mobile-only"><a href="about-us.html">About</a></li>
+                        <li class="mobile-only"><a href="/channels">Channels</a></li>
+                        <li class="mobile-only"><a href="/pricing">Plans & Pricing</a></li>
+                        <li class="mobile-only"><a href="/faq">FAQ</a></li>
+                        <li class="mobile-only"><a href="/about-us">About</a></li>
                     </ul>
                 </nav>
             </div>
@@ -48,7 +49,7 @@
               <div class="header-text-2">
                 A new infrastructure for providing a more stable and powerful IPTV service.
               </div>
-              <a href="signup.html"><button class="btn btn-primary">Get Started</button></a>
+              <button class="btn btn-primary" onclick="location.href = '/signup'">Get Started</button>
               <div class="legal-text">
                 From the latest movies to original series and classic favorites, enjoy the most popular TV on demand.
               </div>
@@ -156,7 +157,7 @@
               events - plus the entire
               iPlayTV streaming library. Access endless entertainment with Disney+ and live sports with BEIN sports, ESPN+, and tons more.</div>
             <h3>For a limited time, get iPlayTV + Live TV $49.99/ for 6 months.*</h3>
-            <button onclick="buyProduct(pro_01hcssmgm6s1r5ghvawkwevmzf)" class="btn middle-btn paddle_button">Get This Deal</button>
+                      <button onclick="location.href = '/login'" class="btn middle-btn paddle_button" >Order Now</button>
             <div class="tiny-text">Not quite what you’re looking for? Get iPlayTV Live TV starting at only
             $9.99/month.
             Unlimited DVR recording.
@@ -206,7 +207,7 @@
               
                 <div class="legal-text">
                   Live TV plan required. Regional restrictions, blackouts and additional
-                  terms apply. <a href="terms.html">See Details</a>
+                  terms apply. <a href="/terms-conditions">See Details</a>
                 </div>
               </div>
           </div>
@@ -235,7 +236,7 @@
                 </div>
               
                 <div class="legal-text">
-                  Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="terms.html">See Details</a>
+                  Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="/terms-conditions">See Details</a>
                 </div>
               </div>
           </div>
@@ -262,14 +263,15 @@
                   </div>
               </div>
               <div class="legal-text">
-                Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="terms.html">See Details</a>
+                Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="/terms-conditions">See Details</a>
               </div>
             </div>
           </div>
         </section>
 
 
-    
+        
+
         <section id="live" class="live">
           <div class="live-border">
             <div class="live-top">
@@ -287,7 +289,7 @@
                         <div class="sub-title">/mo</div>
                       </div>
                     </div>
-                    <button class="btn btn-outline-dark paddle_button">Order Now</button>
+                    <button class="btn btn-outline-dark" onclick="location.href = '/login'"> Order Now</button>
                   <div class="card-body">
                     <nav>
                       <ul>
@@ -316,7 +318,7 @@
                         <div class="sub-title">/3 month</div>
                       </div>
                     </div>
-                    <button id="deluxe" class="btn btn-outline-dark paddle_button">Order Now</button>
+                    <button class="btn btn-outline-dark" onclick="location.href = '/login'"> Order Now</button>
                   <div class="card-body">
                     <nav>
                       <ul>
@@ -346,7 +348,7 @@
                       <div class="sub-title">/6 month</div>
                     </div>
                   </div>
-                  <button id="ultimate" class="btn btn-outline-dark paddle_button">Order Now</button>
+                  <button class="btn btn-outline-dark" onclick="location.href = '/login'">Order Now</button>
                   <div class="card-body">
                     <nav>
                       <ul>
@@ -375,7 +377,7 @@
                       <div class="sub-title">/12 month</div>
                     </div>
                   </div>
-                  <button id="platinum" class="btn btn-dark paddle_button">Order Now</button>
+                  <button class="btn btn-dark" onclick="location.href = '/login'"> Order Now</button>
                   <div class="card-body">
                     <nav>
                       <ul>
@@ -568,12 +570,6 @@
             </div>
           </div>
         </section>
-
-
-
-
-
-
 
 
 
@@ -880,7 +876,7 @@
                 <div class="accordion-content">
                   <p>
                     iPlayTV Live TV subscribers can watch college football games on BEIN, NBC, CBS, ABC, BTN, FOX, BBC, ESPN, FS1,
-                    CBS, ESPN, and many more. <a href="channels.html">click here</a>
+                    CBS, ESPN, and many more. <a href="/channels">click here</a>
                     to see which local and national channels are available to watch live in your area.
                   </p>
                 </div>
@@ -922,7 +918,7 @@
                 </button>
                 <div class="accordion-content">
                   <p>
-                    Yes! We offer the iPlayTV Live TV plan for $9.99/ month <a href="pricing.html">Click Here</a>.
+                    Yes! We offer the iPlayTV Live TV plan for $9.99/ month <a href="/pricing">Click Here</a>.
                   </p>
                 </div>
               </div>
@@ -938,10 +934,10 @@
             <div class="footer-lists">
               <ul>
                 <li class="list-head">BROWSE</li>
-                <li><a href="faq.html">F.A.Q</a></li>
-                <li><a href="channels.html">Channels</a></li>
-                <li><a href="pricing.html">Plans & Pricing</a></li>
-                <li><a href="/terms.html#Devices">Devices Compatibility</a></li>
+                <li><a href="/faq">F.A.Q</a></li>
+                <li><a href="/channels">Channels</a></li>
+                <li><a href="/pricing">Plans & Pricing</a></li>
+                <li><a href="/terms#Devices">Devices Compatibility</a></li>
               </ul>
               <ul>
                 <li><a href="#Covers">TV Shows</a></li>
@@ -961,8 +957,8 @@
               </ul>
               <ul>
                 <li class="list-head">HELP</li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="guide.html">Guidelines</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/guidelines">Guidelines</a></li>
                 <li>+1 768 311-9475</li>
                 <li>support@iplaystv.com</li>
               </ul>
@@ -970,9 +966,9 @@
             </div>
             <div class="divider"></div>
             <div class="social-icons">
-              <i class="fa-brands fa-facebook fa-2x"></i>
               <i class="fa-brands fa-x-twitter fa-2x"></i>
               <i class="fa-brands fa-instagram fa-2x"></i>
+              <i class="fa-brands fa-telegram fa-2x"></i>
               <a href="https://wa.me/212770157721"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
             </div>
 
@@ -980,17 +976,15 @@
               <nav>
                 <ul>
                   <li>&copy 2024 iPlayTV, LLC</li>
-                  <li><a href="terms.html">Terms of Use</a></li>
-                  <li><a href="privacy.html">Privacy Policy</a></li>
-                  <li><a href="refund.html">Refund Policy</a></li>
-                  <li><a href="privacy.html#info">Do Not Sell My Personal Information</a></li>
+                  <li><a href="/terms-conditions">Terms of Use</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a href="/refund-policy">Refund Policy</a></li>
+                  <li><a href="/privacy-policy#info">Do Not Sell My Personal Information</a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </footer>
-
-        
 
 
 
@@ -1008,14 +1002,17 @@
           </div>
         </div>
 
+        
+        <div class="elfsight-app-55eb8377-262f-4b56-9189-80e1e492becf"></div>
+
         <script src="https://kit.fontawesome.com/06ab546f7a.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-55eb8377-262f-4b56-9189-80e1e492becf"></div>
-        <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
         <script src="../js/main.js"></script>
+        <script src="../js/common.js"></script>
         <script src="../js/nav.js"></script>
         <script src="../js/coockies.js"></script>
-        <script src="../js/paddle-payment.js"></script>
+
+        
     </body>
 </html>

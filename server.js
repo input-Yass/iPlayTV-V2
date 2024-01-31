@@ -1,17 +1,20 @@
-import express from "express";
+import express, { json } from "express";
 import bcrypt from "bcrypt";
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, collection, setDoc, getDoc, updateDoc } from "firebase/firestore";
+import Paddle from "@paddle/paddle-js";
+import "dotenv/config";
+
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDYHtz5YU69cefwD2WkRgfCwHHN99YefaU",
-  authDomain: "iplaytv-v2.firebaseapp.com",
-  projectId: "iplaytv-v2",
-  storageBucket: "iplaytv-v2.appspot.com",
-  messagingSenderId: "639219261198",
-  appId: "1:639219261198:web:ca35a7f83738a306fa015f"
-};
+    apiKey: "AIzaSyANWRJe9i6nbffkhTQbUfrqC0bfF-2aLf4",
+    authDomain: "iplaytv-v2-77ab6.firebaseapp.com",
+    projectId: "iplaytv-v2-77ab6",
+    storageBucket: "iplaytv-v2-77ab6.appspot.com",
+    messagingSenderId: "864454108924",
+    appId: "1:864454108924:web:c0017f7eb22b6b05d81979"
+  };
 
 
 const firebase = initializeApp(firebaseConfig);
@@ -27,6 +30,42 @@ app.get('/', (req, res) => {
     res.sendFile("index.html", { root : "public" })
 })
 
+app.get('/home', (req, res) => {
+    res.sendFile("main.html", { root : "public" })
+})
+
+app.get('/channels', (req, res) => {
+    res.sendFile("channels.html", { root : "public" })
+})
+
+app.get('/pricing', (req, res) => {
+    res.sendFile("pricing.html", { root : "public" })
+})
+
+app.get('/faq', (req, res) => {
+    res.sendFile("faq.html", { root : "public" })
+})
+
+app.get('/about-us', (req, res) => {
+    res.sendFile("about-us.html", { root : "public" })
+})
+
+app.get('/guidelines', (req, res) => {
+    res.sendFile("guide.html", { root : "public" })
+})
+
+app.get('/terms-conditions', (req, res) => {
+    res.sendFile("terms.html", { root : "public" })
+})
+
+app.get('/privacy-policy', (req, res) => {
+    res.sendFile("privacy.html", { root : "public" })
+})
+
+app.get('/refund-policy', (req, res) => {
+    res.sendFile("refund.html", { root : "public" })
+})
+
 app.get('/signup', (req, res) => {
     res.sendFile("signup.html", { root : "public" })
 })
@@ -40,7 +79,9 @@ app.post('/signup', (req, res) => {
         res.json({ 'alert' : 'Enter your valid Email'});
     } else if(password.length < 8) {
         res.json({ 'alert' : 'Enter a strong password'});
-    }  else if (!tac) {
+    } else if(!Number(number) || number.length < 10) {
+        res.json({ 'alert' : 'invalide number, Please enter a valid one'});
+    } else if (!tac) {
         res.json({ 'alert' : 'You most agree to our Terms and Conditions!'});
     } else {
         const users = collection(db, "users");
@@ -101,8 +142,10 @@ app.post('/login', (req, res) => {
     })
 })
 
+
+
 app.get('/404', (req, res) => {
-    res.sendFile("/", { root : "public" })
+    res.sendFile("/404.html", { root : "public" })
 })
 
 app.use((req, res) => {
@@ -112,3 +155,4 @@ app.use((req, res) => {
 app.listen(3000, () => {
     console.log('listening on port 3000')
 })
+

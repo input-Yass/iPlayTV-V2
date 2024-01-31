@@ -54,5 +54,5 @@ if (user != null) {
 
 const logout = () => {
     sessionStorage.clear();
-    location.reload()
+    location.replace('/')
 }
